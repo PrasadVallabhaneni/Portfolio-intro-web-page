@@ -1,0 +1,203 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  color:white;
+  position: fixed;
+  font-family: sans-serif;
+}
+.admin {
+  margin-left: 4vw;
+  letter-spacing: 3px;
+}
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  background-position: fixed;
+  /* background:linear-gradient(to top, #A72424 50%, transparent 50%);
+-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease; */
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+}
+.color1 {
+  position: fixed;
+  /* position: relative; */
+  /* position: absolute; */
+  /* background-color: #a72424; */
+  background-color: black;
+  /* background-position: fixed; */
+  height: 180vh;
+  width: 100vw;
+  animation: fill 1.5s ease-out;
+}
+
+@keyframes fill {
+  from {
+    top: 100vh;
+    border-radius: 80%;
+    /* transform: rotate(20deg); */
+  }
+  to {
+    top: -50vh;
+    /* transform: translateY(0vh); */
+    border-radius: 10%;
+    /* transform: rotate(0deg);       */
+  }
+}
+
+.intro {
+  display: flex;
+  flex-wrap: nowrap;
+
+  position: relative;
+  /* background-color: white; */
+  height: 100vh;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.content {
+  display: inline-block;
+  position: absolute;
+
+  top: 30vh;
+  left: 15vw;
+  /* background-color: royalblue; */
+}
+.name {
+  position: relative;
+  color: #302e2e;
+  font-size: 5vw;
+  /* font-weight: bold; */
+  font-family: Monument Extended, Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* background-color: red; */
+  /* text-shadow: 2px 2px 1px black ; */
+  -webkit-transition: 0.4s ease-out;
+  -moz-transition: 0.4s ease-out;
+  -o-transition: 0.4s ease-out;
+  -ms-transition: 0.4s ease-out;
+  z-index: 1;
+}
+#name2 {
+  -webkit-transition: 0.4s ease-out;
+  -moz-transition: 0.4s ease-out;
+  -o-transition: 0.4s ease-out;
+  -ms-transition: 0.4s ease-out;
+  z-index: 0.5;
+}
+/* .zoom-out{
+    font-size:4vw;
+    transition: 0.4s ease-out;
+    transform: translateZ(-50px); */
+
+.letter {
+  /* position: relative; */
+  overflow: hidden;
+  display: inline-flex;
+
+  /* background-color: red; */
+}
+.description {
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+  position: relative;
+  top: 50px;
+  left: 15vw;
+  font-size: 0.9vw;
+  color: grey;
+  /* background-color: rosybrown; */
+  /* overflow: hidden; */
+  transition: 0.5s ease-out;
+}
+
+/* .zoom-In{
+    left:10vw;
+
+    font-size:1.2vw;
+    transition: 0.5s ease-out;
+} */
+.line1 {
+  /* position: absolute; */
+  margin-left: 30vw;
+
+  font-family: Monument Extended Light, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.line2 {
+  margin-left: 10vw;
+
+  font-family: Monument Extended Light, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.line3 {
+  margin-left: 10.5vw;
+
+  font-family: Monument Extended Light, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.line4 {
+  margin-left: 21.5vw;
+
+  font-family: Monument Extended Light, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.line7 {
+  margin-top: 30px;
+}
+.prasad {
+  color: #2546f5;
+}
+.role {
+  color: #2546f5;
+}
+
+#projects {
+  position: relative;
+  /* background-color:black; */
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease-out;
+  -o-transition: 0.4s ease-out;
+  -ms-transition: 0.4s ease-out;
+}
+
+
+#list {
+  position: relative;
+  display: inline-block;
+  top: 10vh;
+  left: 60vw;
+  font-size: 5vw;
+  height: 75vh;
+  color: rgba(255, 255, 255, 0.219);
+  font-family: Monument Extended, Helvetica Neue, Helvetica, Arial, sans-serif;
+  overflow: scroll;
+  line-height: 60px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+}
+.child:hover {
+  /* color: #2546F5; */
+  -webkit-text-fill-color: rgb(250, 248, 248);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .content {
+    left: 5vw;
+  }
+  .name {
+    font-size: 6vw;
+  }
+  .description {
+    font-size: 1.2vw;
+  }
+}
